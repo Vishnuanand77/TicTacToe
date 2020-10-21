@@ -3,10 +3,11 @@ package com.vishnu.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView playerOneScore, playerTwoScore, playerStatus;
     private Button [] buttons = new Button[9];
@@ -35,5 +36,18 @@ public class MainActivity extends AppCompatActivity {
         playerStatus = (TextView) findViewById(R.id.PlayerStatus);
 
         resetGame = (Button) findViewById(R.id.resetGame);
+
+        //Initializing tiles
+        for(int i = 1; i<buttons.length+1; i++){
+            String buttonID = "btn"+i;
+            int resourceID = getResources().getIdentifier(buttonID, "id", getPackageName());
+            buttons[i] = (Button) findViewById(resourceID);
+            buttons[i].setOnClickListener(this);
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
