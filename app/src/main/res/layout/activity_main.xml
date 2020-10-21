@@ -178,14 +178,15 @@
         tools:layout_editor_absoluteY="117dp" />
 
     <Button
+        android:id="@+id/resetGame"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginHorizontal="8dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/AccentButton"
         android:text="@string/reset_game"
-        android:textColor="#ffff"
 
+        android:textColor="#ffff"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
