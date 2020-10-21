@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#EA1B13</color>
+    <color name="colorPrimaryDark">#AF110B</color>
+    <color name="colorAccent">#EA9B13</color>
 
-    <color name="tileColor">#F1C651</color>
+    <color name="tileColor">#303030</color>
     <color name="AccentButton">#F54010</color>
+    <color name="X">#E6B212</color>
+    <color name="O">#21DF9D</color>
 </resources>
